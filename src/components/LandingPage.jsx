@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function LandingPage() {
     // Declare a new state variable, which we'll call "count"
     const [username, setUsername] = useState("");
+
+    useEffect(() => {
+        document.title = `${username}`;
+    });
 
     const handleChange = event => {
         setUsername(event.target.value);

@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
-import Example from './components/LandingPage'
+import LandingPage from './components/LandingPage'
 
 class Home extends Component {
 
-
-    handleButtonPress = () => {
-
-    }
 
     render() {
         return (
@@ -14,7 +10,7 @@ class Home extends Component {
                 <div className="landing-page">
                     Landing page
 
-                    <Example/>
+                    <LandingPage />
                 </div>
             </div>
         )

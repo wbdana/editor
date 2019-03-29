@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
 function LandingPage() {
-    // Declare a new state variable, which we'll call "count"
     const [username, setUsername] = useState("");
 
     useEffect(() => {

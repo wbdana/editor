@@ -4,6 +4,10 @@ import Example from './components/LandingPage'
 class Home extends Component {
 
 
+    handleButtonPress = () => {
+
+    }
+
     render() {
         return (
             <div className="home">

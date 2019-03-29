@@ -1,17 +1,26 @@
 import React, { useState } from 'react';
 
-function Example() {
+function LandingPage() {
     // Declare a new state variable, which we'll call "count"
-    const [count, setCount] = useState(0);
+    const [username, setUsername] = useState("");
+
+    const handleChange = event => {
+        setUsername(event.target.value);
+    };
+
+    const handleSubmit = () => {
+        console.log(`Submitted ${username}`);
+    };
 
     return (
         <div>
-            <p>You clicked {count} times</p>
-            <button onClick={() => setCount(count + 1)}>
-                Click me
+            <p>Username: {username}</p>
+            <input type="text" name="username" onChange={handleChange} />
+            <button onClick={handleSubmit}>
+                Submit
             </button>
         </div>
     );
 }
 
-export default Example;
+export default LandingPage;

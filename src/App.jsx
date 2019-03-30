@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import LandingPage from './components/LandingPage'
 
-class Home extends Component {
+class App extends Component {
 
 
     render() {
         return (
-            <div className="home">
+            <div className="app">
                 <div className="landing-page">
                     <LandingPage />
                 </div>
@@ -15,4 +16,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default App;

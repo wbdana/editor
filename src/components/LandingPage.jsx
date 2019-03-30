@@ -17,11 +17,15 @@ function LandingPage() {
 
     return (
         <div>
+            Landing Page
             <p>Username: {username}</p>
             <input type="text" name="username" onChange={handleChange} />
             <button onClick={handleSubmit}>
                 Submit
             </button>
+
+            {/* Login with Github OAuth2 */}
+
         </div>
     );
 }
